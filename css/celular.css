@@ -1,0 +1,66 @@
+#titulo h1{
+	margin-top: 0px;
+	text-align: center;
+	padding-top: 1em;
+}
+
+#menu ul{
+	list-style-type: none;
+	padding-left: 0px;
+}
+#menu ul li a{
+	width: 99%;
+	padding: 0.5em;
+	padding-bottom: 0.5em;
+	border: solid 2px #C7C0DE;
+}
+#bienvenida{
+	color: #FFFFFF;
+	font-size: 1.2em;
+	padding: 0.5em;
+}
+#conocenos h3,nav{
+	padding-bottom: 1em;
+}
+
+footer{
+	text-align:center;
+}
+
+#powered ul{
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+#suscribir{
+	border-top: solid 2px #C7C0DE;
+	border-bottom: solid 2px #C7C0DE;
+	padding-bottom: 2em;
+}
+#siguenos{
+	padding-bottom: 2em;
+}
+#redes-fijas{
+	display:none;
+}
+
+
+/*------------------ GALERIA ---------------------*/
+ #contenedor-imagen {
+ 	margin: 0% 8% 6% 8%;
+ 	}
+ #contenedor-preview img{
+ 	display: inline-block;
+ 	width: 20%;
+ 	vertical-align: top;
+ 	padding: 2%;
+ }
+ #descripcion-imagen {
+ 	margin: 0px 16px 25px 16px;
+ }
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'GloriaHallelujah';
+src: url("../fuentes/gloria/GloriaHallelujah.eot") format("eot");/*IE 9+*/
+src: url('../fuentes/gloria/GloriaHallelujah.eot?') format('eot'), /*IE 6-8*/
+	     url('../fuentes/gloria/GloriaHallelujah.woff') format('woff'), 
+	     url('../fuentes/gloria/GloriaHallelujah.ttf')  format('truetype'),
+	     url('../fuentes/gloria/GloriaHallelujah.svg#GloriaHallelujah') format('svg');
+}

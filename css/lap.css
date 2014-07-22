@@ -1,0 +1,144 @@
+/*dos columnas con el titulo
+ y la barra de navegacion*/
+#titulo {
+	display: inline-block;
+	width: 35%;
+	vertical-align: top;
+	padding-left: 3em;
+}
+#menu {
+	display: inline-block;
+	width: 58%;
+}
+/*columnas de la barra de navegacion*/
+#menu ul li {
+	text-align: center;
+	display: inline-block;
+	width: 15%;
+}
+
+#menu ul li a {
+	width: 100%;
+ 	padding-top: 2em;
+ 	padding-bottom: 1em;
+ 	display: inline-block;
+ 	text-align: center;
+}
+
+#bienvenida {
+	line-height: 600px;
+}
+
+.servicio {
+	display: inline-block;
+	/*ancho en px, porcentaje, unidades em*/
+	width: 20%;
+}
+
+.mono {
+	display: inline-block;
+	width: 45%;
+	vertical-align: top;
+}
+
+#siguenos, #suscribir {
+	display: inline-block;
+	width: 27%;
+	vertical-align: top;
+}
+#powered {
+	display: inline-block;
+	width: 13%;
+}
+
+#suscribir {
+	border-left: solid 2px #C7C0DE;
+	border-right: solid 2px #C7C0DE;
+	height: 300px;
+}
+/*posicionamiento fijo*/
+#redes-fijas {
+	position: fixed;
+	bottom: 50px;
+	right: 15px;
+	width: 50px;
+	background-color: #C7C0DE;
+	opacity: 0.7;
+	text-align: center;
+	padding: 10px;
+	border-radius: 0.5em 1em 1.5em 2em;
+	/*sombra en la caja*/
+	-o-box-shadow: -8px 6px 0px 0px rgba(175, 177, 181, 0.75);/*opera*/
+	-ms-box-shadow: -8px 6px 0px 0px rgba(175, 177, 181, 0.75);/*ie*/
+	-webkit-box-shadow: -8px 6px 0px 0px rgba(175, 177, 181, 0.75);/*chrome*/
+	-moz-box-shadow: -8px 6px 0px 0px rgba(175, 177, 181, 0.75);/*firefox*/
+	box-shadow: -8px 6px 0px 0px rgba(175, 177, 181, 0.75);
+}
+/*pseudoselector de etiqueta
+detecta si el mouse esta sobre en enlace*/
+#menu ul li a{
+	display:inline-block;
+	margin-top: 5px;
+	text-align: center;
+}
+#menu ul li a:hover{
+	/*border-top: solid 2px #C7C0DE;*/
+	background-color:#C7C0DE;
+	color: #3B2F63;
+}
+.servicio img:hover{
+	transform: scale(1.2);
+	-o-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+}
+
+#siguenos img:hover{
+	transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+}
+
+/*---------------- GALERIA -----------------*/
+#galeria {
+ 	height: 800px;
+ }
+ 
+ #contenedor-imagen {
+ 	display: inline-block;
+ 	width: 40%;
+ 	margin-left: 10%;
+ }
+ 
+ #contenedor-preview {
+ 	display: inline-block;
+ 	width: 15%;
+ 	vertical-align: top;
+ }
+ 
+ #descripcion-imagen {
+ 	margin: 0px 5% 7% 5%;
+ }
+ #contenedor-preview img{
+ 	padding: 10%;
+ }
+ /*-------------------- UBICACION ----------------------*/
+ #direccion, #columna-derecha{
+ 	display: inline-block;
+ 	width: 37%;
+ 	vertical-align: top;
+ }
+ #direccion{
+ 	text-align: left;
+ }
+
+
+
+
+
+
+
+

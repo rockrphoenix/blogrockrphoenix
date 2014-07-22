@@ -1,0 +1,117 @@
+<!-- Este es un comentario Indicamos que tipo de archivo -->
+<!DOCTYPE html>
+<html>
+    <!-- head contiene la configuracion de la página -->
+    <HEAD>
+        <title>Blog</title>
+        <!-- Encoding -->
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Agregar un favicon -->
+        <link rel="shortcut icon" href="../imagenes/favicons/html5.gif">
+        <!-- Importar una hoja de estilos -->
+        <link href="../css/normalize.css" rel="stylesheet" />
+        <link href="../css/fuentes.css" rel="stylesheet"/>
+        <link href="../css/global.css" rel="stylesheet"/>
+        <!-- Estilos para cada dispositivo -->
+        <link href="../css/lap.css" rel="stylesheet" media="screen and (min-width: 800px)"/>
+        <link href="../css/celular.css" rel="stylesheet" media="screen and (max-width: 800px)"/>
+        <script src="//maps.google.com/maps/api/js?sensor=true"></script>
+        <script src="../javascript/jquery-1.10.2.min.js"></script>
+        <script src="../javascript/jquery.history.js"></script>
+        <script src="../javascript/peticiones_ajax.js"></script>
+       
+    </head>
+    <!-- contenido de la pagina -->
+    <body>
+        <header>
+            <div id="titulo">
+                <h1>Artesanos del Software</h1>
+            </div>
+            <!-- barra de navegacion -->
+            <nav id="menu">
+                <!-- lista ul (viñetas) ol (ordenada)-->
+
+                <ul>
+                    <li>
+                        <a href="/" data-ruta="/index_contenido">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="/galeria" data-ruta="/galeria_contenido">Galeria</a>
+                    </li>
+                    <li>
+                        <a href="/canvas" data-ruta="/canvas_contenido">Canvas</a>
+                    </li>
+                    <li>
+                        <a href="/chat" data-ruta="/chat_contenido">Chat</a>
+                    </li>
+                    <li>
+                        <a href="/contacto" data-ruta="/contacto_contenido">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="/ubicacion" data-ruta="/ubicacion_contenido">Ubicación</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div id="contenedor">
+        	{% block contenido %}
+        	{% endblock %}
+        </div>
+        
+        <footer>
+            <div id="siguenos">
+                <h3>Síguenos</h3>
+                <img src="../imagenes/Facebook.png"/>
+                <img src="../imagenes/GooglePlus.png"/>
+                <img src="../imagenes/Twitter.png"/>
+                <img src="../imagenes/github.png"/>
+
+                <div id="redes-fijas">
+                    <div id="redes-imagenes">
+                        <img src="../imagenes/Facebook.png"/>
+                        <img src="../imagenes/GooglePlus.png"/>
+                        <img src="../imagenes/Twitter.png"/>
+                        <img src="../imagenes/github.png"/>
+                    </div>
+                    <a id="enlace-cerrar" href="#">cerrar</a>
+                </div>
+
+            </div>
+            <div id="suscribir">
+                <h3>Suscríbete</h3>
+
+                <form class="formulario-ajax" action="/suscribir" method="post">
+                    <label for="email" >Email: </label>
+                    <input name="correo" id="email" type="email" placeholder="escribe tu email" required="required"/>
+                    <input type="submit" value="suscribir"/>
+                </form>
+                
+            </div>
+            <div id="powered">
+                <h3>Powered by:</h3>
+                <ul>
+                    <li>
+                        <a href="http://www.w3.org/html/wg/drafts/html/master/">HTML5</a>
+                    </li>
+                    <li>
+                        <a href="http://nodejs.org/">Node.js</a>
+                    </li>
+                    <li>
+                        <a href="http://mozilla.github.io/nunjucks/">Nunjucks</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/">GitHub</a>
+                    </li>
+                    <li>
+                        <a href="http://jquery.com/">JQuery</a>
+                    </li>
+                    <li>
+                        <a href="https://www.openshift.com/">OpenShift</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
+

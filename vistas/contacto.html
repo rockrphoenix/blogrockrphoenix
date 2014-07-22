@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block contenido %}
+
+<section id ="contacto">
+	<h2>contacto</h2>
+	<form class="formulario-ajax "id="formulario" action="/contactar" method="post">
+		<div>
+			<label for="nombre">Ingrese su nombre</label><input type="text" id="nombre" name="nombre" placeholder="ingresa tu nombre" required="required" pattern="[a-zA-Z]+"/>
+		</div>
+		<div>
+			<label for="email">Ingrese su e-mail</label><input type="email" id="email" name="email" placeholder="Ingresa un e-mail" required="required" />
+		</div>
+		<div>
+			<label for="website">Website</label><input type="url" id="url" placeholder="Url"  />
+		</div>
+		<div>
+			<label for="textarea">Comentarios</label><textarea id="textarea" placeholder="cometario" required="required" name="textarea"></textarea>
+		</div>
+		<div>
+			<input type="submit" value="enviar">
+		</div>
+	
+	</form>
+	
+	
+</section>
+
+
+
+
+
+{%include "script_ubicacion.html"%}
+{% endblock %}

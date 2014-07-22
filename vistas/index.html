@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block contenido %}
+        <section id="bienvenida">
+            Porque programar es un arte
+        </section>
+        <section id="nuestros-servicios">
+            <div class="servicio">
+                <img src="../imagenes/videojuegos.png"/>
+                <p>
+                    Videojuegos
+                </p>
+            </div>
+            <div class="servicio">
+                <img src="../imagenes/ciencia.png"/>
+                <p>
+                    Ciencia
+                </p>
+            </div>
+            <div class="servicio">
+                <img src="../imagenes/desarrollo.png"/>
+                <p>
+                    Desarrollo
+                </p>
+            </div>
+        </section>
+        <section id="conocenos">
+            <h3>Conócenos</h3>
+            <div id="contenedor-mono" class="mono">
+                <img src="../imagenes/mono.jpg"/>
+                <p>
+                    Nuestro CEO (Dr. Mono)
+                </p>
+            </div>
+            <div class="mono">
+                <video controls="controls">
+                    <source src="../videos/bunsen.mp4" type="video/mp4"/>
+                    <source src="../videos/bunsen.ogv" type="video/ogg"/>
+                    <source src="../videos/bunsen.webm" type="video/webm"/>
+                    Tu navegador no soporta video nativo
+                </video>
+                <p>
+                    Nuestra Historia
+                </p>
+            </div>
+        </section>
+        {%include "scripts_index.html"%}
+        {#comentario de nunjucks#}
+
+{% endblock %}
